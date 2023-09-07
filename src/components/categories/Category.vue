@@ -36,9 +36,6 @@ const data = [
     img: jampasir
   }
 ]
-var logo = document.querySelector('.animation-slide') as HTMLElement
-var slide = logo?.cloneNode(true)
-document.querySelector('.logos')?.appendChild(slide)
 </script>
 
 <template>
@@ -48,11 +45,13 @@ document.querySelector('.logos')?.appendChild(slide)
       <swiper
         :slides-per-view="screenWidth > 560 ? 5 : 2"
         :scrollbar="{ draggable: true }"
-        :space-between="20"
-        autoplay:delay="5000"
-        autoplay:stopOnLastSlide="false"
-        autoplay:disableOnInteraction="false"
-        :autoplay="true"
+        :space-between="10"
+        :loop="true"
+        :autoplay="{
+          delay: 500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        }"
         class="pt-[24px]"
       >
         <SwiperSlide v-for="item in data" :key="item.title" class="animation-slide">
@@ -66,18 +65,4 @@ document.querySelector('.logos')?.appendChild(slide)
   </div>
 </template>
 
-<style scoped>
-@keyframes slide {
-  from {
-    transform: translateX(-0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.animation-slide {
-  animation: 5s slide infinite linear;
-}
-</style>
-../hook/useGetScreen
+<style scoped></style>

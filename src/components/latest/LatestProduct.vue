@@ -7,6 +7,7 @@ import { useGetScreenSize } from '../../hook/useGetScreen'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 const { screenWidth } = useGetScreenSize()
+import { Navigation } from 'swiper/modules'
 </script>
 
 <template>
@@ -21,25 +22,28 @@ const { screenWidth } = useGetScreenSize()
           <span class="font-bold text-[#FCE834] text-[72px]">50%</span>
         </div>
       </div>
-      <swiper
+      <Swiper
         class="flex justify-between flex-wrap md:ml-[-50px]"
         :slides-per-view="useGetSlide(screenWidth)"
         :space-between="screenWidth < 376 ? 40 : 10"
         :scrollbar="{ draggable: true }"
-        autoplay:delay="5000"
-        autoplay:stopOnLastSlide="false"
-        autoplay:disableOnInteraction="false"
-        :autoplay="true"
+        :loop="true"
+        :navigation="{
+          enabled: true,
+          nextEl: '.swiper-next',
+          prevEl: '.swiper-button-prev'
+        }"
+        :modules="[Navigation]"
       >
         <swiper-slide v-for="i in 20" class="flex items-center animation-slide">
           <Items />
         </swiper-slide>
-      </swiper>
-      <div
-        class="absolute content top-[50%] right-[5%] md:right-[2%] z-[2] bg-[#0000004D] p-[8px] rounded-[99px] text-[#fff]"
-      >
-        <img src="/src/assets/chevron.svg" alt="chevron" />
-      </div>
+        <div
+          class="absolute content top-[50%] right-[5%] md:right-[2%] z-[2] bg-[#0000004D] p-[8px] rounded-[99px] text-[#fff] swiper-next"
+        >
+          <img src="/src/assets/chevron.svg" alt="chevron" />
+        </div>
+      </Swiper>
     </div>
   </div>
 </template>

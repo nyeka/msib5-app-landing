@@ -1,10 +1,19 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import Section from '../header/Section.vue'
 import Items from '../product/Items.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { useGetScreenSize } from '../../hook/useGetScreen'
 import { useGetSlide } from '@/hook/useGetSlide'
 const { screenWidth } = useGetScreenSize()
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { register } from 'swiper/element/bundle'
+import { Navigation } from 'swiper/modules'
+
+onMounted(() => {
+  register()
+})
 </script>
 
 <template>
@@ -16,17 +25,20 @@ const { screenWidth } = useGetScreenSize()
         :slides-per-view="useGetSlide(screenWidth)"
         :scrollbar="{ draggable: true }"
         :space-between="screenWidth < 376 ? 40 : 10"
-        autoplay:delay="5000"
-        autoplay:stopOnLastSlide="false"
-        autoplay:disableOnInteraction="false"
-        :autoplay="true"
+        :loop="true"
+        :navigation="{
+          enabled: true,
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }"
+        :modules="[Navigation]"
       >
-        <SwiperSlide v-for="i in 10" class="flex items-center animation-slide">
+        <swiper-slide v-for="i in 10" class="flex items-center animation-slide">
           <Items />
-        </SwiperSlide>
+        </swiper-slide>
       </swiper>
       <div
-        class="absolute content top-[50%] right-[0] z-[2] bg-[#0000004D] p-[8px] rounded-[99px] text-[#fff]"
+        class="absolute content top-[50%] right-[0] z-[2] bg-[#0000004D] p-[8px] rounded-[99px] text-[#fff] swiper-button-next"
       >
         <img src="/src/assets/chevron.svg" alt="chevron" />
       </div>

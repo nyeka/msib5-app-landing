@@ -13,9 +13,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "@vercel/analytics": "^1.0.2",
     "swiper": "^10.2.0",
     "vue": "^3.3.4",
+    "vue-flickity": "^1.2.1",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {

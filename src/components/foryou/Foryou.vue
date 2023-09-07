@@ -15,38 +15,26 @@ const { screenWidth } = useGetScreenSize()
         <Items />
       </div>
     </div>
-    <swiper
+    <Swiper
       v-else
       :slides-per-view="useGetSlide(screenWidth)"
       :space-between="screenWidth < 376 ? 40 : 10"
       navigation
-      :pagination="{ clickable: true }"
       :scrollbar="{ draggable: true }"
-      autoplay:delay="5000"
-      autoplay:stopOnLastSlide="false"
-      autoplay:disableOnInteraction="false"
+      :loop="true"
+      :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      }"
       backtodropdown
-      autoplay
       class="mt-[24px]"
     >
       <SwiperSlide v-for="i in 15" class="flex items-center animation-slide">
         <Items />
       </SwiperSlide>
-    </swiper>
+    </Swiper>
   </div>
 </template>
 
-<style scoped>
-@keyframes slide {
-  from {
-    transform: translateX(-0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.animation-slide {
-  animation: 5s slide infinite linear;
-}
-</style>
+<style scoped></style>
