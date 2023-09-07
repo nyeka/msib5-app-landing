@@ -6,7 +6,7 @@ import Navbar from '../navbar/Navbar.vue'
   <div class="bg-gradient-to-b from-[#C5E5FD] to-[#fff] font-semibold">
     <Navbar />
     <div class="flex justify-between">
-      <div class="flex flex-col items-center justify-center px-[32px]">
+      <div class="flex flex-col items-center justify-center px-[32px] mt-[100px] md:mt-[70px]">
         <h3 class="text-[34px] md:text-[60px]">Welcome to GITS Commerce</h3>
         <div class="font-normal">
           Morpheme is a next-gen financial technology company in the process of reinventing banking.
@@ -18,7 +18,7 @@ import Navbar from '../navbar/Navbar.vue'
           <span> Start Shopping </span>
         </button>
       </div>
-      <div class="hidden md:flex">
+      <div class="hidden md:flex mt-[100px] md:mt-[70px]">
         <img src="/src/assets/home.svg" alt="home" />
       </div>
     </div>

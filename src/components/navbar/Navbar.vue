@@ -1,8 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useScrollPosition } from '../../hook/useScrollPosition'
+const { scrollPosition } = useScrollPosition()
+</script>
 <template>
-  <div class="flex justify-between items-center p-[32px]">
+  <div
+    :class="
+      scrollPosition > 0
+        ? 'bg-[#fff] shadow-md fixed w-full flex justify-between items-center py-[18px] px-[32px] z-[10]'
+        : 'fixed w-full flex justify-between items-center px-[32px] py-[18px]'
+    "
+  >
     <div class="flex gap-[12px] text-center">
-      <img src="/src/assets/Logo.png" alt="kntl" />
+      <img src="/src/assets/Logo.png" alt="logo" />
       <div class="md:flex hidden gap-[32px] list-none items-center">
         <li>Home</li>
         <div class="flex gap-[12px]">
