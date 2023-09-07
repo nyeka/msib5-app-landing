@@ -4,30 +4,36 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { useGetScreenSize } from '../../hook/useGetScreen'
 import 'swiper/css'
 const { screenWidth } = useGetScreenSize()
+import kaca from '../../assets/kacapembesar.svg'
+import kopi from '../../assets/kopi.svg'
+import shiield from '../../assets/shiield.svg'
+import hp from '../../assets/hp.svg'
+import jampasir from '../../assets/jampasir.svg'
+
 const data = [
   {
     title: "men's fashion",
-    img: 'kacapembesar'
+    img: kaca
   },
   {
     title: "women's fashion",
-    img: 'kopi'
+    img: kopi
   },
   {
     title: 'Bicycle',
-    img: 'shiield'
+    img: shiield
   },
   {
     title: 'Handphone',
-    img: 'hp'
+    img: hp
   },
   {
     title: 'hobbies and collections',
-    img: 'jampasir'
+    img: jampasir
   },
   {
     title: 'Household',
-    img: 'jampasir'
+    img: jampasir
   }
 ]
 var logo = document.querySelector('.animation-slide') as HTMLElement
@@ -51,7 +57,7 @@ document.querySelector('.logos')?.appendChild(slide)
       >
         <SwiperSlide v-for="item in data" :key="item.title" class="animation-slide">
           <div class="flex flex-col items-center">
-            <img :src="`/src/assets/${item.img}.svg`" class="h-[50px] md:h-fit" />
+            <img :src="item.img" class="h-[50px] md:h-fit" />
             <div class="mt-[12px] text-center">{{ item.title }}</div>
           </div>
         </SwiperSlide>
