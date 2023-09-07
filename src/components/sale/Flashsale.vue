@@ -4,8 +4,6 @@ import Items from '../product/Items.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { useGetScreenSize } from '../../hook/useGetScreen'
 import { useGetSlide } from '@/hook/useGetSlide'
-import 'swiper/css'
-import 'swiper/css/effect-fade'
 const { screenWidth } = useGetScreenSize()
 </script>
 
@@ -17,7 +15,7 @@ const { screenWidth } = useGetScreenSize()
         class="flex justify-between py-[24px] flex-wrap gap-[12px]"
         :slides-per-view="useGetSlide(screenWidth)"
         :scrollbar="{ draggable: true }"
-        :space-between="5"
+        :space-between="screenWidth < 376 ? 40 : 10"
         autoplay:delay="5000"
         autoplay:stopOnLastSlide="false"
         autoplay:disableOnInteraction="false"
@@ -35,5 +33,3 @@ const { screenWidth } = useGetScreenSize()
     </div>
   </div>
 </template>
-
-<style scoped></style>

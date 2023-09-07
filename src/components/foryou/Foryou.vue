@@ -3,21 +3,22 @@ import Section from '../header/Section.vue'
 import Items from '../product/Items.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { useGetSlide } from '@/hook/useGetSlide'
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules'
 import { useGetScreenSize } from '../../hook/useGetScreen'
-import 'swiper/css'
-import 'swiper/css/effect-fade'
-
 const { screenWidth } = useGetScreenSize()
 </script>
 
 <template>
   <div class="p-[32px]">
     <Section text="For You" />
-
+    <div v-if="screenWidth > 868" class="flex gap-[32px] flex-wrap justify-between mt-[24px]">
+      <div v-for="i in 15" class="flex items-center">
+        <Items />
+      </div>
+    </div>
     <swiper
+      v-else
       :slides-per-view="useGetSlide(screenWidth)"
-      :space-between="5"
+      :space-between="screenWidth < 376 ? 40 : 10"
       navigation
       :pagination="{ clickable: true }"
       :scrollbar="{ draggable: true }"

@@ -24,7 +24,7 @@ const { screenWidth } = useGetScreenSize()
       <swiper
         class="flex justify-between flex-wrap md:ml-[-50px]"
         :slides-per-view="useGetSlide(screenWidth)"
-        :space-between="screenWidth < 376 ? 40 : 0"
+        :space-between="screenWidth < 376 ? 40 : 10"
         :scrollbar="{ draggable: true }"
         autoplay:delay="5000"
         autoplay:stopOnLastSlide="false"

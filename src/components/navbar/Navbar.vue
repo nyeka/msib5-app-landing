@@ -5,8 +5,14 @@
       <img src="/src/assets/Logo.png" alt="kntl" />
       <div class="md:flex hidden gap-[32px] list-none items-center">
         <li>Home</li>
-        <li>Products</li>
-        <li>Categories</li>
+        <div class="flex gap-[12px]">
+          <li>Products</li>
+          <img src="/src/assets/chevdown.svg" />
+        </div>
+        <div class="flex gap-[12px]">
+          <li>Categories</li>
+          <img src="/src/assets/chevdown.svg" />
+        </div>
       </div>
     </div>
     <div class="md:flex gap-[24px] items-center hidden">
