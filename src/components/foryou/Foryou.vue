@@ -8,9 +8,9 @@ const { screenWidth } = useGetScreenSize()
 </script>
 
 <template>
-  <div class="p-[32px]">
+  <div class="container mx-auto p-8">
     <Section text="For You" />
-    <div v-if="screenWidth > 868" class="flex gap-[32px] flex-wrap justify-between mt-[24px]">
+    <div v-if="screenWidth > 868" class="flex gap-[32px] flex-wrap mt-[24px] container mx-auto">
       <div v-for="i in 15" class="flex items-center">
         <Items />
       </div>

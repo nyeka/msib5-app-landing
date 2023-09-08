@@ -1,6 +1,8 @@
 export const useGetSlide = (screenWidth: number) => {
-  if (screenWidth <= 408) {
+  if (screenWidth <= 328) {
     return 1
+  } else if (screenWidth <= 408) {
+    return 1.5
   } else if (screenWidth <= 752) {
     return 2
   } else if (screenWidth <= 968) {

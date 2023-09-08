@@ -11,7 +11,7 @@ import { Navigation } from 'swiper/modules'
 </script>
 
 <template>
-  <div class="p-[32px] relative">
+  <div class="container p-8 mx-auto relative">
     <Section text="Latest Product" />
     <div class="flex py-[24px]">
       <div class="rounded-[8px] bg-[#28A0F6] md:w-[952px] p-[32px] md:h-[494px] hidden md:block">
@@ -39,7 +39,7 @@ import { Navigation } from 'swiper/modules'
           <Items />
         </swiper-slide>
         <div
-          class="absolute content top-[50%] right-[5%] md:right-[2%] z-[2] bg-[#0000004D] p-[8px] rounded-[99px] text-[#fff] swiper-next"
+          class="absolute content top-[50%] right-[0%] z-[2] bg-[#0000004D] p-[8px] rounded-[99px] text-[#fff] swiper-next"
         >
           <img src="/src/assets/chevron.svg" alt="chevron" />
         </div>

@@ -17,11 +17,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="p-[34px] bg-[#F9FAFB]">
+  <div class="p-8 bg-[#F9FAFB]">
     <div class="relative">
       <Section text="Flash Sale" />
       <swiper
-        class="flex justify-between py-[24px] flex-wrap gap-[12px]"
+        class="flex justify-between py-[24px] flex-wrap gap-[12px] w-full"
         :slides-per-view="useGetSlide(screenWidth)"
         :scrollbar="{ draggable: true }"
         :space-between="screenWidth < 376 ? 40 : 10"

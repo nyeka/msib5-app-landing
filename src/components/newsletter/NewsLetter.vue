@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#101828] flex justify-between p-[32px] flex-wrap gap-[24px]">
+  <div class="flex justify-between flex-wrap gap-[24px] bg-[#101828] p-8">
     <div>
       <p class="text-[#fff] md:text-[20px]">Join Our Newsletter</p>
       <p class="font-normal text-[#EAECF0] md:text-[16px]">
