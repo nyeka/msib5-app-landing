@@ -40,6 +40,7 @@ onMounted(() => {
             :image="items.image"
             :description="items.description"
             :id="items.id"
+            :list-img="items.listImg"
           />
         </swiper-slide>
       </swiper>

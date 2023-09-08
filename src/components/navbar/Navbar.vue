@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useScrollPosition } from '../../hook/useScrollPosition'
+import { RouterLink } from 'vue-router'
 const { scrollPosition } = useScrollPosition()
 </script>
 <template>
@@ -13,7 +14,7 @@ const { scrollPosition } = useScrollPosition()
     <div class="flex gap-[12px] text-center">
       <img src="/src/assets/Logo.png" alt="logo" />
       <div class="md:flex hidden gap-[32px] list-none items-center">
-        <li>Home</li>
+        <RouterLink to="/">Home</RouterLink>
         <div class="flex gap-[12px]">
           <li>Products</li>
           <img src="/src/assets/chevdown.svg" />

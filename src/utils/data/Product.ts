@@ -1,170 +1,193 @@
 import { type Iproduct } from '../type/Iproduct'
-import sepatu from '../../assets/sepatu.png'
-import botol from '../../assets/botol.png'
+import sepatu from '../../assets/sepatu.svg'
+import botol from '../../assets/botol.svg'
 
 export const Product: Iproduct[] = [
   {
-    id: 1,
+    id: 1425,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 2,
+    id: 22344,
     name: 'UX Review Presentations',
     price: 36000,
     image: sepatu,
+    listImg: [sepatu, sepatu, sepatu, sepatu],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 3,
+    id: 35345,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 4,
+    id: 434254,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 5,
+    id: 564354,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 6,
+    id: 6534,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 7,
+    id: 7132,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 8,
+    id: 4238,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   }
 ]
 
 export const ProductLatest: Iproduct[] = [
   {
-    id: 1,
+    id: 43251,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 2,
+    id: 4572,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 3,
+    id: 98763,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 4,
+    id: 78864,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 5,
+    id: 86575,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 6,
+    id: 75656,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 7,
+    id: 7547,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 8,
+    id: 65468,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 9,
+    id: 76559,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 10,
+    id: 1450,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 11,
+    id: 13431,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 12,
+    id: 1223,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 13,
+    id: 15433,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 14,
+    id: 18654,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   },
   {
-    id: 15,
+    id: 16545,
     name: 'UX Review Presentations',
     price: 36000,
     image: botol,
+    listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
   }
 ]

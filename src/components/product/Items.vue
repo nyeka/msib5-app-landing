@@ -1,5 +1,9 @@
 <template>
-  <div class="md:w-[224px] rounded-[8px]" :key="props.id">
+  <div
+    class="md:w-[224px] rounded-[8px] cursor-pointer"
+    :key="props.id"
+    @click="gotoDetails(props.id, props.name)"
+  >
     <div
       class="flex justify-center items-center bg-gray-300 border-x-2 border-t-2 rounded-[8px] rounded-b-none"
     >
@@ -22,6 +26,14 @@
 
 <script setup lang="ts">
 import { type Iproduct } from '@/utils/type/Iproduct'
+import { useRouter } from 'vue-router'
+import { ref } from 'vue'
 import { formatIDR } from '../../utils/ConvertNumber'
 const props = defineProps<Iproduct>()
+const route = useRouter()
+
+const gotoDetails = (id: number, name: string) => {
+  const nameProduct = name.replace(/\s/g, '-').toLowerCase()
+  route.push({ name: 'product-detail', params: { nameProduct, id } })
+}
 </script>

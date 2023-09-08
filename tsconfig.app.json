@@ -8,12 +8,13 @@
     "src/**/*.d.ts",
     "src/hook/useGetScreen.ts",
     "src/utils/**/*.ts",
-    "src/utils/data/Product.ts"
+    "src/utils/data/Product.ts",
+    "src/store/**/*.ts",
+    "src/store/Product.ts"
   ],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "types": ["vue-splide"],
-    "composite": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
