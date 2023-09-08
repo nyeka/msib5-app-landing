@@ -32,7 +32,7 @@
         </div>
 
         <div class="flex gap-[32px] flex-col md:flex-row">
-          <div class="md:w-[506px] flex flex-col gap-[12px]">
+          <div class="md:w-[506px] flex flex-col gap-[12px] basis-1/2">
             <div class="bg-gray-200 flex items-center justify-center rounded-[16px]">
               <img :src="product?.image" alt="image" class="w-full" />
             </div>
