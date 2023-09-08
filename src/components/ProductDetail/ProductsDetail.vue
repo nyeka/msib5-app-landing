@@ -10,7 +10,7 @@
             >
               Back
             </button>
-            <p class="font-bold text-[34px]">Product Detail</p>
+            <p class="font-bold text-[16px] md:text-[34px]">Product Detail</p>
             <button
               class="text-[#fff] bg-[#0984DD] flex justify-center rounded-[8px] items-center pl-[18px] pr-[18px] pt-[10px] pb-[10px]"
               @click="
@@ -61,7 +61,7 @@
                 </button>
                 <input
                   :value="itemquantity"
-                  class="p-2 cursor-not-allowed rounded-[8px] md:w-[46px] md:h-[46px] text-center"
+                  class="p-2 cursor-not-allowed rounded-[8px] w-fit md:w-[46px] md:h-[46px] text-center"
                   disabled
                 />
                 <button

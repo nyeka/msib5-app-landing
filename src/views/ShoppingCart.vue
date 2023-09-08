@@ -2,13 +2,13 @@
   <div class="bg-gradient-to-b from-[#C5E5FD] to-[#fff]">
     <Navbar />
     <div class="p-8">
-      <div class="flex flex-col gap-[24px] mt-[120px]">
+      <div class="flex flex-col gap-[24px] mt-[120px] flex-wrap">
         <p class="font-bold text-[40px]">Shoping Cart</p>
-        <div v-if="store.Products.length > 0" class="flex gap-[24px]">
+        <div v-if="store.Products.length > 0" class="flex gap-[24px] flex-wrap">
           <div class="flex flex-col gap-[24px] basis-2/3">
             <div
               v-for="product in store.Products"
-              class="flex gap-[24px] w-full bg-[#FFF] p-2 rounded-[4px]"
+              class="flex gap-[24px] w-full bg-[#FFF] p-2 rounded-[4px] flex-wrap md:flex-nowrap"
             >
               <div
                 class="flex md:w-[288px] md:h-[162px] justify-center items-center bg-gray-300 border-x-2 border-t-2 rounded-[8px] rounded-b-none"
@@ -32,10 +32,10 @@
               </div>
             </div>
           </div>
-          <div class="bg-[#fff] h-fit w-[430px] p-[20px] flex flex-col gap-[12px]">
+          <div class="bg-[#fff] w-full h-fit md:w-[430px] p-[20px] flex flex-col gap-[12px]">
             <div class="flex justify-between">
               <p>Sub Total</p>
-              <p class="font-bold text-[20px]">{{ store.totalItemsPrice }}</p>
+              <p class="font-bold text-[20px]">{{ formatIDR(store.totalItemsPrice) }}</p>
             </div>
             <div class="font-normal text-[#98A2B3]">
               <p>Shipping And Taxes</p>
