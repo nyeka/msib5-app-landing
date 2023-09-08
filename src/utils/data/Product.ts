@@ -6,7 +6,7 @@ export const Product: Iproduct[] = [
   {
     id: 1425,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 365000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -14,7 +14,7 @@ export const Product: Iproduct[] = [
   {
     id: 22344,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 32000,
     image: sepatu,
     listImg: [sepatu, sepatu, sepatu, sepatu],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -22,7 +22,7 @@ export const Product: Iproduct[] = [
   {
     id: 35345,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 30000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -30,7 +30,7 @@ export const Product: Iproduct[] = [
   {
     id: 434254,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 343000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -38,7 +38,7 @@ export const Product: Iproduct[] = [
   {
     id: 564354,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 56000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -46,7 +46,7 @@ export const Product: Iproduct[] = [
   {
     id: 6534,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 76000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -54,7 +54,7 @@ export const Product: Iproduct[] = [
   {
     id: 7132,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 96000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -62,7 +62,7 @@ export const Product: Iproduct[] = [
   {
     id: 4238,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 106000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -73,7 +73,7 @@ export const ProductLatest: Iproduct[] = [
   {
     id: 43251,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 376000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
@@ -81,7 +81,7 @@ export const ProductLatest: Iproduct[] = [
   {
     id: 4572,
     name: 'UX Review Presentations',
-    price: 36000,
+    price: 365000,
     image: botol,
     listImg: [botol, botol, botol, botol],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'

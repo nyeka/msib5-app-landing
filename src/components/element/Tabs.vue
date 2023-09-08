@@ -29,7 +29,7 @@ import { ref } from 'vue'
 const prop = defineProps<{
   tabs: string[]
 }>()
-const includesText = prop.tabs.some((item) => item.includes('/assets'))
+const includesText = prop.tabs.some((item) => item.includes('/assets' || '/src'))
 const activeTab = ref(prop.tabs[0])
 </script>
 
