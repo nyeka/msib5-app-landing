@@ -10,6 +10,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { register } from 'swiper/element/bundle'
 import { Navigation } from 'swiper/modules'
+import { Product } from '../../utils/data/Product'
 
 onMounted(() => {
   register()
@@ -25,7 +26,6 @@ onMounted(() => {
         :slides-per-view="useGetSlide(screenWidth)"
         :scrollbar="{ draggable: true }"
         :space-between="screenWidth < 376 ? 40 : 10"
-        :loop="true"
         :navigation="{
           enabled: true,
           nextEl: '.swiper-button-next',
@@ -33,8 +33,14 @@ onMounted(() => {
         }"
         :modules="[Navigation]"
       >
-        <swiper-slide v-for="i in 10" class="flex items-center animation-slide">
-          <Items />
+        <swiper-slide v-for="items in Product" class="flex items-center animation-slide">
+          <Items
+            :name="items.name"
+            :price="items.price"
+            :image="items.image"
+            :description="items.description"
+            :id="items.id"
+          />
         </swiper-slide>
       </swiper>
       <div

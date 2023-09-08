@@ -3,16 +3,23 @@ import Section from '../header/Section.vue'
 import Items from '../product/Items.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { useGetSlide } from '@/hook/useGetSlide'
+import { ProductLatest } from '../../utils/data/Product'
 import { useGetScreenSize } from '../../hook/useGetScreen'
 const { screenWidth } = useGetScreenSize()
 </script>
 
 <template>
-  <div class="container mx-auto p-8">
+  <div class="p-8">
     <Section text="For You" />
-    <div v-if="screenWidth > 868" class="flex gap-8 flex-wrap mt-[24px] justify-between">
-      <div v-for="i in 15" class="flex items-center">
-        <Items />
+    <div v-if="screenWidth > 1024" class="flex gap-8 flex-wrap mt-[24px] justify-between">
+      <div v-for="items in ProductLatest" class="flex items-center">
+        <Items
+          :name="items.name"
+          :price="items.price"
+          :image="items.image"
+          :description="items.description"
+          :id="items.id"
+        />
       </div>
     </div>
     <Swiper
@@ -30,8 +37,14 @@ const { screenWidth } = useGetScreenSize()
       backtodropdown
       class="mt-[24px]"
     >
-      <SwiperSlide v-for="i in 15" class="flex items-center animation-slide">
-        <Items />
+      <SwiperSlide v-for="items in ProductLatest" class="flex items-center animation-slide">
+        <Items
+          :name="items.name"
+          :price="items.price"
+          :image="items.image"
+          :description="items.description"
+          :id="items.id"
+        />
       </SwiperSlide>
     </Swiper>
   </div>

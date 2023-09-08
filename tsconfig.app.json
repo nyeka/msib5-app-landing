@@ -6,7 +6,9 @@
     "src/**/*.vue",
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "src/hook/useGetScreen.ts"
+    "src/hook/useGetScreen.ts",
+    "src/utils/**/*.ts",
+    "src/utils/data/Product.ts"
   ],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {

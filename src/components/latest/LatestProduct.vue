@@ -8,10 +8,11 @@ import 'swiper/css'
 import 'swiper/css/effect-fade'
 const { screenWidth } = useGetScreenSize()
 import { Navigation } from 'swiper/modules'
+import { ProductLatest } from '../../utils/data/Product'
 </script>
 
 <template>
-  <div class="container p-8 mx-auto relative">
+  <div class="p-8 relative">
     <Section text="Latest Product" />
     <div class="flex py-[24px]">
       <div class="rounded-[8px] bg-[#28A0F6] md:w-[952px] p-[32px] md:h-[494px] hidden md:block">
@@ -35,8 +36,14 @@ import { Navigation } from 'swiper/modules'
         }"
         :modules="[Navigation]"
       >
-        <swiper-slide v-for="i in 20" class="flex items-center animation-slide">
-          <Items />
+        <swiper-slide v-for="items in ProductLatest" class="flex items-center animation-slide">
+          <Items
+            :name="items.name"
+            :price="items.price"
+            :image="items.image"
+            :description="items.description"
+            :id="items.id"
+          />
         </swiper-slide>
         <div
           class="absolute content top-[50%] right-[0%] z-[2] bg-[#0000004D] p-[8px] rounded-[99px] text-[#fff] swiper-next"

@@ -56,7 +56,7 @@ const data = [
       >
         <SwiperSlide v-for="item in data" :key="item.title" class="animation-slide">
           <div class="flex flex-col items-center">
-            <img :src="item.img" class="h-[50px] md:h-fit" />
+            <img :src="item.img" class="h-[50px] xl:h-fit" />
             <div class="mt-[12px] text-center">{{ item.title }}</div>
           </div>
         </SwiperSlide>
@@ -64,5 +64,3 @@ const data = [
     </div>
   </div>
 </template>
-
-<style scoped></style>

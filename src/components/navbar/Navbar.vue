@@ -6,7 +6,7 @@ const { scrollPosition } = useScrollPosition()
   <div
     :class="
       scrollPosition > 0
-        ? 'bg-[#fff] shadow-md fixed w-full flex justify-between items-center py-[18px] px-[32px] z-[10]'
+        ? 'bg-[#fff] fixed w-full flex justify-between items-center py-[18px] px-[32px] z-[10]'
         : 'fixed w-full flex justify-between items-center px-[32px] py-[18px]'
     "
   >
