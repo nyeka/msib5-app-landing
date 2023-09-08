@@ -10,7 +10,7 @@ const { screenWidth } = useGetScreenSize()
 <template>
   <div class="container mx-auto p-8">
     <Section text="For You" />
-    <div v-if="screenWidth > 868" class="flex gap-[32px] flex-wrap mt-[24px] container mx-auto">
+    <div v-if="screenWidth > 868" class="flex gap-8 flex-wrap mt-[24px] justify-between">
       <div v-for="i in 15" class="flex items-center">
         <Items />
       </div>
@@ -36,5 +36,3 @@ const { screenWidth } = useGetScreenSize()
     </Swiper>
   </div>
 </template>
-
-<style scoped></style>
