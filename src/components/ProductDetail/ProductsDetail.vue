@@ -7,6 +7,7 @@
           <div class="flex justify-between items-center">
             <button
               class="text-[#000] border-2 border-[#D0D5DD] flex justify-center rounded-[8px] items-center pl-[18px] pr-[18px] pt-[10px] pb-[10px]"
+              @click="$router.back()"
             >
               Back
             </button>
